@@ -8,7 +8,14 @@ This database and ETL Pipeline are of huge benefit for this sort of app due to f
 * Provides information about user song and band preferences which allow to develop a recommendation system (rank based recomendations, user-user collaborative filtering e.t.c)
 * Provides information about user subscriptions. The behaviour of users that cancelled the subscription can be analysed and this knowldege can be used to identify users that might canceln their membership in the future. Such users could recieve some benefits (discounts, gifts etc) which prevents the cancelation of their membership. 
 
-# Database Schema and ETL Pipeline
+# Database Schema 
+The star schema below allows to answer the above stated questions:
+![](https://github.com/kondrash2206/Data_Modeling_with_Postgres/blob/master/schema.png)
+
+# ETL Pipeline
+ETL Pipeline gets the data from 2 datasources and fills 4 Tables (Songs, Artists, Time, User). The Songplays Table is filled also from Songsand Artists Tables.
+![](https://github.com/kondrash2206/Data_Modeling_with_Postgres/blob/master/ETL.png)
+
 
 # Files
 **sql_queries.py** -collection of all SQL Querries used in table manipulation and etl
@@ -18,3 +25,5 @@ This database and ETL Pipeline are of huge benefit for this sort of app due to f
 # Installations
 In order to run this project following python libraries are needed: psycopg2, pandas
 
+### Acknowledgements
+This project is a part of Udacity "Data Engineering" Nanodegree
