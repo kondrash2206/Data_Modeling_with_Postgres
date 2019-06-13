@@ -23,7 +23,7 @@ ETL Pipeline gets the data from 2 datasources and fills 4 Tables (Songs, Artists
 * **etl.py** - ETL (Extract Transfer Load) Pipeline that fills the previously created tables with data from json files
 
 # Installations
-In order to run this project following python libraries are needed: psycopg2, pandas
+In order to run this project following python libraries are needed: psycopg2, pandas. To run it first start "create_tables.py", this creates defined database and tables. And then run "etl.py" that fills the tables with data. The source data in the form of json files has to be prepared (see **Description** part). 
 
 ### Acknowledgements
 This project is a part of Udacity "Data Engineering" Nanodegree
