@@ -18,9 +18,9 @@ ETL Pipeline gets the data from 2 datasources and fills 4 Tables (Songs, Artists
 
 
 # Files
-**sql_queries.py** -collection of all SQL Querries used in table manipulation and etl
-**create_tables.py** - file that creates a database, drops all existing tables and creates new tables
-**etl.py** - ETL (Extract Transfer Load) Pipeline that fills the previously created tables with data from json files
+* **sql_queries.py** -collection of all SQL Querries used in table manipulation and etl
+* **create_tables.py** - file that creates a database, drops all existing tables and creates new tables
+* **etl.py** - ETL (Extract Transfer Load) Pipeline that fills the previously created tables with data from json files
 
 # Installations
 In order to run this project following python libraries are needed: psycopg2, pandas
